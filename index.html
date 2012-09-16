@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Loading</title>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/jqfuncs.js"></script>
+	<script type="text/javascript">
+			//Using extended options of plugin
+			/*$("section").loading({
+				img : "img/myload.gif",
+				texto : "Loading...",
+				ancho : 100
+			},function(){
+				$("section").load("prueba.html");
+			});*/
+
+		$(document).on("click","a",function(e){
+			e.preventDefault();
+			var url = $(this).attr("href");
+			$("section").loading(function(){
+				$("section").load(url);
+			});
+		});
+	</script>
+</head>
+<body>
+	<a href="partes/prueba.html">Prueba corto</a>
+	<a href="partes/prueba2.html">Prueba pesada</a>
+	<section>
+		Texto de prueba
+	</section>
+</body>
+</html>
