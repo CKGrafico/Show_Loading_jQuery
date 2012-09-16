@@ -14,7 +14,6 @@ This plugin simply displays a "Loading .." in the desired layer, you can customi
 ``$("section").loading({
 	img : "img/myload.gif",
 	texto : "Loading...",
-
 	ancho : 100
 },function(){
 	$("section").load("prueba.html");
