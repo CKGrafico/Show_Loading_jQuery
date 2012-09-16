@@ -11,18 +11,21 @@ This plugin simply displays a "Loading .." in the desired layer, you can customi
 
 
 #####Métodos de funcionamiento recomendados
-``$("section").loading({
+``$("#mydiv").loading({
 	img : "img/myload.gif",
 	texto : "Loading...",
 	ancho : 100
 },function(){
-	$("section").load("prueba.html");
+	$("#mydiv").load("mypage.html");
 });``
 
 
-#####simple
-``$("section").loading(function(){
-	$("section").load("prueba.html");
+#####Simple
+``$("#mydiv").loading();``
+
+#####Uso típico
+``$("#mydiv").loading(function(){
+	$("#mydiv").load("mypage.html");
 });``
 
 ##NOTA: LA FUNCION load() DE JQUERY USADA EN LOS EJEMPLOS NO SUELE IR EN LOCAL,SUBE A UN SERVIDOR TU CÓDIGO ANTES DE PROBARLO O USA UN SERVIDOR LOCAL
