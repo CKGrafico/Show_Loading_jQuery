@@ -9,6 +9,11 @@ Este plugin simplemente muestra un "Cargando.." en la capa deseada, se puede per
 ####What is this?
 This plugin simply displays a "Loading .." in the desired layer, you can customize both the image and the text displayed. Don't load a single section shows the loader and loading should be done after using a callback.
 
+#####Parámetros
+img -> ruta de la imagen de load, por defecto: img/loading.gif
+texto -> Texto, por defecto: Cargando...
+ancho -> Ancho imagen loading en píxels, por defecto: 50
+callback -> Tiene callback
 
 #####Métodos de funcionamiento recomendados
 ``$("#mydiv").loading({
