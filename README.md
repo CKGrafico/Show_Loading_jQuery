@@ -11,9 +11,13 @@ This plugin simply displays a "Loading .." in the desired layer, you can customi
 
 #####Parámetros
 img -> ruta de la imagen de load, por defecto: img/loading.gif
+
 texto -> Texto, por defecto: Cargando...
+
 ancho -> Ancho imagen loading en píxels, por defecto: 50
+
 callback -> Tiene callback
+
 
 #####Métodos de funcionamiento recomendados
 ``$("#mydiv").loading({
