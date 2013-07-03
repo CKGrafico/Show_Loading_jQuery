@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Show loading jquery by CKGrafico</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/CKGrafico/Show_Loading_jQuery">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/CKGrafico/Show_Loading_jQuery/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/CKGrafico/Show_Loading_jQuery/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Show loading jquery</h1>
+          <p>Plugin para ver un loading mediante jquery</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/CKGrafico">CKGrafico</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h2>
+<a name="plugin-creado-por-enrique-fernandez-guerra" class="anchor" href="#plugin-creado-por-enrique-fernandez-guerra"><span class="octicon octicon-link"></span></a>Plugin creado por: Enrique Fernandez Guerra</h2>
+
+<h3>
+<a name="web-del-creador-httpwwwckgraficocom" class="anchor" href="#web-del-creador-httpwwwckgraficocom"><span class="octicon octicon-link"></span></a>Web del creador: <a href="http://www.ckgrafico.com">http://www.ckgrafico.com</a>
+</h3>
+
+<h3>
+<a name="fecha-de-creacin-septiembre-2012" class="anchor" href="#fecha-de-creacin-septiembre-2012"><span class="octicon octicon-link"></span></a>Fecha de creación: Septiembre 2012</h3>
+
+<h4>
+<a name="nadie-podr-evitar-que-copies-pero-deja-la-fuente-para-que-otros-lleguen-al-original" class="anchor" href="#nadie-podr-evitar-que-copies-pero-deja-la-fuente-para-que-otros-lleguen-al-original"><span class="octicon octicon-link"></span></a>Nadie podrá evitar que copies pero deja la fuente para que otros lleguen al original</h4>
+
+<hr><h4>
+<a name="que-es-este-plugin" class="anchor" href="#que-es-este-plugin"><span class="octicon octicon-link"></span></a>Que es este plugin:</h4>
+
+<p>Este plugin simplemente muestra un "Cargando.." en la capa deseada, se puede personalizar tanto la imagen como el texto que aparecen. No carga una sección solo muestra el loader y la carga se debe hacer despues mediante un callback.</p>
+
+<h4>
+<a name="what-is-this" class="anchor" href="#what-is-this"><span class="octicon octicon-link"></span></a>What is this?</h4>
+
+<p>This plugin simply displays a "Loading .." in the desired layer, you can customize both the image and the text displayed. Don't load a single section shows the loader and loading should be done after using a callback.</p>
+
+<h5>
+<a name="parmetros" class="anchor" href="#parmetros"><span class="octicon octicon-link"></span></a>Parámetros</h5>
+
+<p>img -&gt; ruta de la imagen de load, por defecto: img/loading.gif</p>
+
+<p>texto -&gt; Texto, por defecto: Cargando...</p>
+
+<p>ancho -&gt; Ancho imagen loading en píxels, por defecto: 50</p>
+
+<p>callback -&gt; Tiene callback</p>
+
+<h5>
+<a name="mtodos-de-funcionamiento-recomendados" class="anchor" href="#mtodos-de-funcionamiento-recomendados"><span class="octicon octicon-link"></span></a>Métodos de funcionamiento recomendados</h5>
+
+<p><code>$("#mydiv").loading({
+    img : "img/myload.gif",
+    texto : "Loading...",
+    ancho : 100
+},function(){
+    $("#mydiv").load("mypage.html");
+});</code></p>
+
+<h5>
+<a name="simple" class="anchor" href="#simple"><span class="octicon octicon-link"></span></a>Simple</h5>
+
+<p><code>$("#mydiv").loading();</code></p>
+
+<h5>
+<a name="uso-tpico" class="anchor" href="#uso-tpico"><span class="octicon octicon-link"></span></a>Uso típico</h5>
+
+<p><code>$("#mydiv").loading(function(){
+    $("#mydiv").load("mypage.html");
+});</code></p>
+
+<h2>
+<a name="nota-la-funcion-load-de-jquery-usada-en-los-ejemplos-no-suele-ir-en-localsube-a-un-servidor-tu-cdigo-antes-de-probarlo-o-usa-un-servidor-local" class="anchor" href="#nota-la-funcion-load-de-jquery-usada-en-los-ejemplos-no-suele-ir-en-localsube-a-un-servidor-tu-cdigo-antes-de-probarlo-o-usa-un-servidor-local"><span class="octicon octicon-link"></span></a>NOTA: LA FUNCION load() DE JQUERY USADA EN LOS EJEMPLOS NO SUELE IR EN LOCAL,SUBE A UN SERVIDOR TU CÓDIGO ANTES DE PROBARLO O USA UN SERVIDOR LOCAL</h2>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
